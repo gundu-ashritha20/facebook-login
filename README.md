@@ -25,5 +25,5 @@ A simple React-based implementation of Facebook Login using the official Faceboo
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/gundu-ashritha20/facebook-login-interface.git
-cd facebook-login-interface
+git clone https://github.com/gundu-ashritha20/facebook-login.git
+cd facebook-login
