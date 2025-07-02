@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Signup</title>
+  <link rel="stylesheet" href="index.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
+    </div>
+
+    <div class="form-box">
+      <h1>Create a new account</h1>
+      <p>It’s quick and easy.</p>
+      <hr />
+
+      <form id="signupForm" onsubmit="return validateForm();">
+
+        <div class="input-group">
+          <input type="text" placeholder="First name" required />
+          <input type="text" placeholder="Surname" required />
+        </div>
+
+        <input type="text" placeholder="Mobile number or email address" required />
+        <input type="password" placeholder="New password" required />
+
+        <label>Date of birth</label>
+        <div class="dob">
+          <select>
+            <option>Day</option>
+            <script>
+              for (let i = 1; i <= 31; i++) document.write(`<option>${i}</option>`);
+            </script>
+          </select>
+          <select>
+            <option>Month</option>
+            <option>Jan</option><option>Feb</option><option>Mar</option>
+            <option>Apr</option><option>May</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option><option>Sep</option>
+            <option>Oct</option><option>Nov</option><option>Dec</option>
+          </select>
+          <select>
+            <option>Year</option>
+            <script>
+              for (let y = 2025; y >= 1905; y--) document.write(`<option>${y}</option>`);
+            </script>
+          </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Custom</label>
+        </div>
+
+        <p class="terms">
+          By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+        </p>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
